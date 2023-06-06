@@ -1,0 +1,41 @@
+16:56:07,985 asyncio DEBUG Using selector: KqueueSelector
+16:56:07,985 docker.utils.config DEBUG Trying paths: ['/Users/tkopton/.docker/config.json', '/Users/tkopton/.dockercfg']
+16:56:07,986 docker.utils.config DEBUG Found file at path: /Users/tkopton/.docker/config.json
+16:56:07,986 docker.auth DEBUG Found 'auths' section
+16:56:07,986 docker.auth DEBUG Auth data for https://index.docker.io/v1/ is absent. Client might be using a credentials store instead.
+16:56:07,986 docker.auth DEBUG Found 'credsStore' section
+16:56:08,2 urllib3.connectionpool DEBUG http://localhost:None "GET /version HTTP/1.1" 200 None
+16:56:08,23 asyncio DEBUG Using selector: KqueueSelector
+16:56:08,81 docker.api.build DEBUG Looking for auth config
+16:56:08,636 docker.auth DEBUG Looking for auth entry for 'https://index.docker.io/v1/'
+16:56:09,121 docker.auth DEBUG Looking for auth entry for 'https://index.docker.io/v1//access-token'
+16:56:09,527 docker.auth DEBUG Looking for auth entry for 'https://index.docker.io/v1//refresh-token'
+16:56:09,974 docker.api.build DEBUG Sending auth config ('https://index.docker.io/v1/', 'index.docker.io', 'https://index.docker.io/v1//access-token', 'https://index.docker.io/v1//refresh-token')
+16:56:10,90 urllib3.connectionpool DEBUG http://localhost:None "POST /v1.42/build?t=tktestmp01-test%3A1.0.0&q=False&nocache=False&rm=True&forcerm=False&pull=False&labels=%7B%22mp-test%22%3A+%221685631368.004695%22%7D HTTP/1.1" 200 None
+16:56:10,230 urllib3.connectionpool DEBUG http://localhost:None "GET /v1.42/images/bf877462dbe7/json HTTP/1.1" 200 None
+16:56:10,273 urllib3.connectionpool DEBUG http://localhost:None "POST /v1.42/containers/create HTTP/1.1" 201 None
+16:56:10,280 urllib3.connectionpool DEBUG http://localhost:None "GET /v1.42/containers/302c2352c419695b8918f5367a4ed38521018bae4be9ef59582740dfd9e4a1f0/json HTTP/1.1" 200 None
+16:56:10,620 urllib3.connectionpool DEBUG http://localhost:None "POST /v1.42/containers/302c2352c419695b8918f5367a4ed38521018bae4be9ef59582740dfd9e4a1f0/start HTTP/1.1" 204 0
+16:56:10,725 asyncio DEBUG Using selector: KqueueSelector
+16:56:12,365 httpx._client DEBUG HTTP Request: GET http://localhost:8080/apiVersion "HTTP/1.1 200 OK"
+16:56:13,18 httpx._client DEBUG HTTP Request: GET http://localhost:8080/adapterDefinition "HTTP/1.1 200 OK"
+16:56:13,23 vmware_aria_operations_integration_sdk.validation.describe_checks INFO Validating describe.xml
+16:56:13,517 asyncio DEBUG Using selector: KqueueSelector
+16:56:54,579 asyncio DEBUG Using selector: KqueueSelector
+16:57:09,116 asyncio DEBUG Using selector: KqueueSelector
+16:58:13,127 asyncio DEBUG Using selector: KqueueSelector
+17:00:16,566 docker.api.build DEBUG Looking for auth config
+17:00:16,907 docker.auth DEBUG Looking for auth entry for 'https://docker.io'
+17:00:17,248 docker.auth DEBUG Looking for auth entry for 'https://index.docker.io/v1/'
+17:00:17,595 docker.auth DEBUG Looking for auth entry for 'https://index.docker.io/v1//access-token'
+17:00:17,951 docker.auth DEBUG Looking for auth entry for 'https://index.docker.io/v1//refresh-token'
+17:00:18,286 docker.api.build DEBUG Sending auth config ('https://index.docker.io/v1/', 'https://docker.io', 'docker.io', 'index.docker.io', 'https://index.docker.io/v1//access-token', 'https://index.docker.io/v1//refresh-token')
+17:00:18,306 urllib3.connectionpool DEBUG http://localhost:None "POST /v1.42/build?t=docker.io%2Ftkopton307%2Fariaops-sdk-mps%3Amp-test-01%3A1.0.0_1685631616.504707&q=False&nocache=True&rm=True&forcerm=False&pull=False HTTP/1.1" 500 None
+17:00:18,390 urllib3.connectionpool DEBUG http://localhost:None "GET /v1.42/images/json?only_ids=0&all=0&filters=%7B%22reference%22%3A+%5B%22docker.io%2Ftkopton307%2Fariaops-sdk-mps%3Amp-test-01%3A1.0.0_1685631616.504707%22%5D%7D HTTP/1.1" 200 None
+17:00:18,509 urllib3.connectionpool DEBUG http://localhost:None "POST /v1.42/containers/302c2352c419695b8918f5367a4ed38521018bae4be9ef59582740dfd9e4a1f0/kill HTTP/1.1" 204 0
+17:00:18,528 urllib3.connectionpool DEBUG http://localhost:None "DELETE /v1.42/containers/302c2352c419695b8918f5367a4ed38521018bae4be9ef59582740dfd9e4a1f0?v=False&link=False&force=False HTTP/1.1" 204 0
+17:00:18,536 urllib3.connectionpool DEBUG http://localhost:None "POST /v1.42/images/prune?filters=%7B%22label%22%3A+%5B%22mp-test%22%5D%7D HTTP/1.1" 200 None
+17:00:19,405 vmware_aria_operations_integration_sdk.mp_build ERROR Unable to build pak file
+17:00:19,407 vmware_aria_operations_integration_sdk.mp_build ERROR ERROR: Unable to build Docker file at /Users/tkopton/local-repos/ariaops-sdk/mp-test-01:
+ {'message': 'invalid reference format'}
+17:00:19,408 vmware_aria_operations_integration_sdk.mp_build INFO 

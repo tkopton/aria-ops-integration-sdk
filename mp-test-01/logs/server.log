@@ -1,0 +1,96 @@
+2023-06-01 14:28:50,175 connexion.options WARNING The swagger_ui directory could not be found.
+    Please install connexion with extra install: pip install connexion[swagger-ui]
+    or provide the path to your local installation by passing swagger_path=<your path>
+
+2023-06-01 14:28:50,177 connexion.options WARNING The swagger_ui directory could not be found.
+    Please install connexion with extra install: pip install connexion[swagger-ui]
+    or provide the path to your local installation by passing swagger_path=<your path>
+
+2023-06-01 14:28:50,185 main INFO Port: 8080
+2023-06-01 14:28:50,491 swagger_server.controllers.controller INFO Request: apiVersion
+2023-06-01 14:28:50,583 swagger_server.controllers.controller INFO Request: definition
+2023-06-01 14:28:51,33 swagger_server.controllers.controller INFO Subprocess exited before reading input.
+2023-06-01 14:29:09,700 connexion.options WARNING The swagger_ui directory could not be found.
+    Please install connexion with extra install: pip install connexion[swagger-ui]
+    or provide the path to your local installation by passing swagger_path=<your path>
+
+2023-06-01 14:29:09,701 connexion.options WARNING The swagger_ui directory could not be found.
+    Please install connexion with extra install: pip install connexion[swagger-ui]
+    or provide the path to your local installation by passing swagger_path=<your path>
+
+2023-06-01 14:29:09,708 main INFO Port: 8080
+2023-06-01 14:29:09,995 swagger_server.controllers.controller INFO Request: apiVersion
+2023-06-01 14:29:11,145 swagger_server.controllers.controller INFO Request: definition
+2023-06-01 14:29:11,625 swagger_server.controllers.controller INFO Subprocess exited before reading input.
+2023-06-01 14:56:11,940 connexion.options WARNING The swagger_ui directory could not be found.
+    Please install connexion with extra install: pip install connexion[swagger-ui]
+    or provide the path to your local installation by passing swagger_path=<your path>
+
+2023-06-01 14:56:11,943 connexion.options WARNING The swagger_ui directory could not be found.
+    Please install connexion with extra install: pip install connexion[swagger-ui]
+    or provide the path to your local installation by passing swagger_path=<your path>
+
+2023-06-01 14:56:11,952 main INFO Port: 8080
+2023-06-01 14:56:12,361 swagger_server.controllers.controller INFO Request: apiVersion
+2023-06-01 14:56:12,419 swagger_server.controllers.controller INFO Request: definition
+2023-06-01 14:56:13,13 swagger_server.controllers.controller INFO Subprocess exited before reading input.
+2023-06-01 16:11:50,81 connexion.options WARNING The swagger_ui directory could not be found.
+    Please install connexion with extra install: pip install connexion[swagger-ui]
+    or provide the path to your local installation by passing swagger_path=<your path>
+
+2023-06-01 16:11:50,83 connexion.options WARNING The swagger_ui directory could not be found.
+    Please install connexion with extra install: pip install connexion[swagger-ui]
+    or provide the path to your local installation by passing swagger_path=<your path>
+
+2023-06-01 16:11:50,96 main INFO Port: 8080
+2023-06-01 16:11:50,376 swagger_server.controllers.controller INFO Request: apiVersion
+2023-06-01 16:11:50,521 swagger_server.controllers.controller INFO Request: definition
+2023-06-01 16:11:51,261 swagger_server.controllers.controller INFO Subprocess exited before reading input.
+2023-06-01 16:18:01,761 connexion.options WARNING The swagger_ui directory could not be found.
+    Please install connexion with extra install: pip install connexion[swagger-ui]
+    or provide the path to your local installation by passing swagger_path=<your path>
+
+2023-06-01 16:18:01,764 connexion.options WARNING The swagger_ui directory could not be found.
+    Please install connexion with extra install: pip install connexion[swagger-ui]
+    or provide the path to your local installation by passing swagger_path=<your path>
+
+2023-06-01 16:18:01,774 main INFO Port: 8080
+2023-06-01 16:18:02,18 swagger_server.controllers.controller INFO Request: apiVersion
+2023-06-01 16:18:02,107 swagger_server.controllers.controller INFO Request: definition
+2023-06-01 16:18:02,836 swagger_server.controllers.controller INFO Subprocess exited before reading input.
+2023-06-01 16:26:16,359 connexion.options WARNING The swagger_ui directory could not be found.
+    Please install connexion with extra install: pip install connexion[swagger-ui]
+    or provide the path to your local installation by passing swagger_path=<your path>
+
+2023-06-01 16:26:16,362 connexion.options WARNING The swagger_ui directory could not be found.
+    Please install connexion with extra install: pip install connexion[swagger-ui]
+    or provide the path to your local installation by passing swagger_path=<your path>
+
+2023-06-01 16:26:16,372 main INFO Port: 8080
+2023-06-01 16:26:16,719 swagger_server.controllers.controller INFO Request: apiVersion
+2023-06-01 16:26:16,780 swagger_server.controllers.controller INFO Request: definition
+2023-06-01 16:26:17,525 swagger_server.controllers.controller INFO Subprocess exited before reading input.
+2023-06-01 16:27:49,513 connexion.options WARNING The swagger_ui directory could not be found.
+    Please install connexion with extra install: pip install connexion[swagger-ui]
+    or provide the path to your local installation by passing swagger_path=<your path>
+
+2023-06-01 16:27:49,515 connexion.options WARNING The swagger_ui directory could not be found.
+    Please install connexion with extra install: pip install connexion[swagger-ui]
+    or provide the path to your local installation by passing swagger_path=<your path>
+
+2023-06-01 16:27:49,527 main INFO Port: 8080
+2023-06-01 16:27:49,619 swagger_server.controllers.controller INFO Request: apiVersion
+2023-06-01 16:27:49,689 swagger_server.controllers.controller INFO Request: definition
+2023-06-01 16:27:50,549 swagger_server.controllers.controller INFO Subprocess exited before reading input.
+2023-06-01 16:30:55,548 connexion.options WARNING The swagger_ui directory could not be found.
+    Please install connexion with extra install: pip install connexion[swagger-ui]
+    or provide the path to your local installation by passing swagger_path=<your path>
+
+2023-06-01 16:30:55,552 connexion.options WARNING The swagger_ui directory could not be found.
+    Please install connexion with extra install: pip install connexion[swagger-ui]
+    or provide the path to your local installation by passing swagger_path=<your path>
+
+2023-06-01 16:30:55,571 main INFO Port: 8080
+2023-06-01 16:30:55,920 swagger_server.controllers.controller INFO Request: apiVersion
+2023-06-01 16:30:56,40 swagger_server.controllers.controller INFO Request: definition
+2023-06-01 16:30:57,125 swagger_server.controllers.controller INFO Subprocess exited before reading input.

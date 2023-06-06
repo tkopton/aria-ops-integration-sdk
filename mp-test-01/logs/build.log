@@ -1,0 +1,97 @@
+18:30:49,439 asyncio DEBUG Using selector: KqueueSelector
+18:30:49,440 docker.utils.config DEBUG Trying paths: ['/Users/tkopton/.docker/config.json', '/Users/tkopton/.dockercfg']
+18:30:49,440 docker.utils.config DEBUG Found file at path: /Users/tkopton/.docker/config.json
+18:30:49,440 docker.auth DEBUG Found 'auths' section
+18:30:49,440 docker.auth DEBUG Auth data for docker.io is absent. Client might be using a credentials store instead.
+18:30:49,440 docker.auth DEBUG Auth data for https://index.docker.io/v1/ is absent. Client might be using a credentials store instead.
+18:30:49,440 docker.auth DEBUG Found 'credsStore' section
+18:30:49,458 urllib3.connectionpool DEBUG http://localhost:None "GET /version HTTP/1.1" 200 None
+18:30:49,465 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Skipping directory './resources': Excluded by SDK
+18:30:49,478 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Skipping directory './content': Excluded by SDK
+18:30:49,481 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Skipping directory './logs': Excluded by SDK
+18:30:49,484 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Skipping directory './venv-tk-testmp01': Virtual Environment
+18:30:49,487 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Skipping directory './build': Excluded by SDK
+18:30:49,489 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Skipping directory './.git': Hidden
+18:30:49,493 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Adding '.' to image build context
+18:30:49,496 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Adding './requirements.txt' to image build context
+18:30:49,499 asyncio DEBUG Using selector: KqueueSelector
+18:30:49,520 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Adding './manifest.txt' to image build context
+18:30:49,543 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Adding './Dockerfile' to image build context
+18:30:49,547 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Adding './config.json' to image build context
+18:30:49,553 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Adding './commands.cfg' to image build context
+18:30:49,559 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Adding './.gitignore' to image build context
+18:30:49,569 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Adding './eula.txt' to image build context
+18:30:49,575 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Adding './adapter_requirements.txt' to image build context
+18:30:49,580 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Adding './app' to image build context
+18:30:49,586 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Adding './app/adapter.py' to image build context
+18:30:49,593 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Adding './app/constants.py' to image build context
+18:30:49,598 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Adding './conf' to image build context
+18:30:49,598 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Adding './conf/describeSchema.xsd' to image build context
+18:30:49,614 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Adding './conf/images' to image build context
+18:30:49,618 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Adding './conf/images/TraversalSpec' to image build context
+18:30:49,622 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Adding './conf/images/TraversalSpec/.gitkeep' to image build context
+18:30:49,626 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Adding './conf/images/AdapterKind' to image build context
+18:30:49,627 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Adding './conf/images/AdapterKind/.gitkeep' to image build context
+18:30:49,634 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Adding './conf/images/ResourceKind' to image build context
+18:30:49,634 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Adding './conf/images/ResourceKind/.gitkeep' to image build context
+18:30:49,641 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Adding './conf/resources' to image build context
+18:30:49,644 docker.api.build DEBUG Looking for auth config
+18:30:50,269 docker.auth DEBUG Looking for auth entry for 'https://docker.io'
+18:30:50,798 docker.auth DEBUG Looking for auth entry for 'https://index.docker.io/v1/'
+18:30:51,318 docker.auth DEBUG Looking for auth entry for 'https://index.docker.io/v1//access-token'
+18:30:51,849 docker.auth DEBUG Looking for auth entry for 'https://index.docker.io/v1//refresh-token'
+18:30:52,374 docker.api.build DEBUG Sending auth config ('docker.io', 'https://index.docker.io/v1/', 'https://docker.io', 'index.docker.io', 'https://index.docker.io/v1//access-token', 'https://index.docker.io/v1//refresh-token')
+18:30:52,423 urllib3.connectionpool DEBUG http://localhost:None "POST /v1.43/build?t=tktestmp01-test%3A1.0.0&q=False&nocache=False&rm=True&forcerm=False&pull=False&labels=%7B%22mp-test%22%3A+%221685637049.4599192%22%7D HTTP/1.1" 200 None
+18:30:52,552 urllib3.connectionpool DEBUG http://localhost:None "GET /v1.43/images/c1add76dedc5/json HTTP/1.1" 200 None
+18:30:52,595 urllib3.connectionpool DEBUG http://localhost:None "POST /v1.43/containers/create HTTP/1.1" 201 None
+18:30:52,605 urllib3.connectionpool DEBUG http://localhost:None "GET /v1.43/containers/65118d7223f705d92dcf66e5abb05c0ded2d342d20f12cea59ef454899d7eac9/json HTTP/1.1" 200 None
+18:30:53,142 urllib3.connectionpool DEBUG http://localhost:None "POST /v1.43/containers/65118d7223f705d92dcf66e5abb05c0ded2d342d20f12cea59ef454899d7eac9/start HTTP/1.1" 204 0
+18:30:53,223 asyncio DEBUG Using selector: KqueueSelector
+18:30:55,929 httpx._client DEBUG HTTP Request: GET http://localhost:8080/apiVersion "HTTP/1.1 200 OK"
+18:30:57,133 httpx._client DEBUG HTTP Request: GET http://localhost:8080/adapterDefinition "HTTP/1.1 200 OK"
+18:30:57,141 vmware_aria_operations_integration_sdk.validation.describe_checks INFO Validating describe.xml
+18:31:00,637 vmware_aria_operations_integration_sdk.mp_build DEBUG registry tag: docker.io/tkopton307/ariaops-sdk-mps:mp-test-01:1.0.0_1685637060.6376529
+18:31:00,698 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Skipping directory './resources': Excluded by SDK
+18:31:00,699 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Skipping directory './content': Excluded by SDK
+18:31:00,707 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Skipping directory './logs': Excluded by SDK
+18:31:00,710 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Skipping directory './venv-tk-testmp01': Virtual Environment
+18:31:00,714 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Skipping directory './build': Excluded by SDK
+18:31:00,718 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Skipping directory './.git': Hidden
+18:31:00,725 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Adding '.' to image build context
+18:31:00,728 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Adding './requirements.txt' to image build context
+18:31:00,739 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Adding './manifest.txt' to image build context
+18:31:00,747 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Adding './Dockerfile' to image build context
+18:31:00,760 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Adding './config.json' to image build context
+18:31:00,769 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Adding './commands.cfg' to image build context
+18:31:00,776 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Adding './.gitignore' to image build context
+18:31:00,785 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Adding './eula.txt' to image build context
+18:31:00,791 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Adding './adapter_requirements.txt' to image build context
+18:31:00,801 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Adding './app' to image build context
+18:31:00,809 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Adding './app/adapter.py' to image build context
+18:31:00,818 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Adding './app/constants.py' to image build context
+18:31:00,834 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Adding './conf' to image build context
+18:31:00,834 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Adding './conf/describeSchema.xsd' to image build context
+18:31:00,854 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Adding './conf/images' to image build context
+18:31:00,861 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Adding './conf/images/TraversalSpec' to image build context
+18:31:00,863 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Adding './conf/images/TraversalSpec/.gitkeep' to image build context
+18:31:00,876 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Adding './conf/images/AdapterKind' to image build context
+18:31:00,880 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Adding './conf/images/AdapterKind/.gitkeep' to image build context
+18:31:00,887 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Adding './conf/images/ResourceKind' to image build context
+18:31:00,891 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Adding './conf/images/ResourceKind/.gitkeep' to image build context
+18:31:00,896 vmware_aria_operations_integration_sdk.docker_wrapper DEBUG Adding './conf/resources' to image build context
+18:31:00,898 docker.api.build DEBUG Looking for auth config
+18:31:01,545 docker.auth DEBUG Looking for auth entry for 'https://docker.io'
+18:31:02,225 docker.auth DEBUG Looking for auth entry for 'https://index.docker.io/v1/'
+18:31:02,968 docker.auth DEBUG Looking for auth entry for 'https://index.docker.io/v1//access-token'
+18:31:03,857 docker.auth DEBUG Looking for auth entry for 'https://index.docker.io/v1//refresh-token'
+18:31:04,978 docker.api.build DEBUG Sending auth config ('docker.io', 'https://index.docker.io/v1/', 'https://docker.io', 'index.docker.io', 'https://index.docker.io/v1//access-token', 'https://index.docker.io/v1//refresh-token')
+18:31:05,4 urllib3.connectionpool DEBUG http://localhost:None "POST /v1.43/build?t=docker.io%2Ftkopton307%2Fariaops-sdk-mps%3Amp-test-01%3A1.0.0_1685637060.6376529&q=False&nocache=True&rm=True&forcerm=False&pull=False HTTP/1.1" 500 None
+18:31:05,64 urllib3.connectionpool DEBUG http://localhost:None "GET /v1.43/images/json?only_ids=0&all=0&filters=%7B%22reference%22%3A+%5B%22docker.io%2Ftkopton307%2Fariaops-sdk-mps%3Amp-test-01%3A1.0.0_1685637060.6376529%22%5D%7D HTTP/1.1" 200 None
+18:31:05,320 urllib3.connectionpool DEBUG http://localhost:None "POST /v1.43/containers/65118d7223f705d92dcf66e5abb05c0ded2d342d20f12cea59ef454899d7eac9/kill HTTP/1.1" 204 0
+18:31:05,362 urllib3.connectionpool DEBUG http://localhost:None "DELETE /v1.43/containers/65118d7223f705d92dcf66e5abb05c0ded2d342d20f12cea59ef454899d7eac9?v=False&link=False&force=False HTTP/1.1" 204 0
+18:31:05,385 urllib3.connectionpool DEBUG http://localhost:None "POST /v1.43/images/prune?filters=%7B%22label%22%3A+%5B%22mp-test%22%5D%7D HTTP/1.1" 200 None
+18:31:05,390 vmware_aria_operations_integration_sdk.mp_build DEBUG Deleting directory: '/Users/tkopton/local-repos/ariaops-sdk/mp-test-01/build/tmp'
+18:31:07,750 vmware_aria_operations_integration_sdk.mp_build ERROR Unable to build pak file
+18:31:07,754 vmware_aria_operations_integration_sdk.mp_build ERROR ERROR: Unable to build Docker file at /Users/tkopton/local-repos/ariaops-sdk/mp-test-01:
+ {'message': 'invalid reference format'}
+18:31:07,759 vmware_aria_operations_integration_sdk.mp_build INFO 

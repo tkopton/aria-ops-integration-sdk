@@ -1,0 +1,877 @@
+16:27:52,936 asyncio DEBUG Using selector: KqueueSelector
+16:27:52,958 docker.api.build DEBUG Looking for auth config
+16:27:53,368 docker.auth DEBUG Looking for auth entry for 'https://index.docker.io/v1/'
+16:27:53,691 docker.auth DEBUG Looking for auth entry for 'https://index.docker.io/v1//access-token'
+16:27:54,7 docker.auth DEBUG Looking for auth entry for 'https://index.docker.io/v1//refresh-token'
+16:27:54,327 docker.api.build DEBUG Sending auth config ('https://index.docker.io/v1/', 'index.docker.io', 'https://index.docker.io/v1//access-token', 'https://index.docker.io/v1//refresh-token')
+16:27:54,405 urllib3.connectionpool DEBUG http://localhost:None "POST /v1.42/build?t=tktestmp01-test%3A1.0.0&q=False&nocache=False&rm=True&forcerm=False&pull=False&labels=%7B%22mp-test%22%3A+%221685629672.918219%22%7D HTTP/1.1" 200 None
+16:28:25,408 urllib3.connectionpool DEBUG http://localhost:None "GET /v1.42/images/17262d8555f0/json HTTP/1.1" 200 None
+16:28:48,891 asyncio DEBUG Using selector: KqueueSelector
+16:28:48,962 urllib3.connectionpool DEBUG http://localhost:None "POST /v1.42/containers/create HTTP/1.1" 201 None
+16:28:48,968 urllib3.connectionpool DEBUG http://localhost:None "GET /v1.42/containers/6b224d8f93439c0536f44f155b24d47eb1d465df5ade198a5338f530397e1c9e/json HTTP/1.1" 200 None
+16:28:49,271 urllib3.connectionpool DEBUG http://localhost:None "POST /v1.42/containers/6b224d8f93439c0536f44f155b24d47eb1d465df5ade198a5338f530397e1c9e/start HTTP/1.1" 204 0
+16:28:50,487 httpx._client DEBUG HTTP Request: GET http://localhost:8080/apiVersion "HTTP/1.1 200 OK"
+16:28:51,28 httpx._client DEBUG HTTP Request: GET http://localhost:8080/adapterDefinition "HTTP/1.1 200 OK"
+16:28:51,172 urllib3.connectionpool DEBUG http://localhost:None "POST /v1.42/containers/6b224d8f93439c0536f44f155b24d47eb1d465df5ade198a5338f530397e1c9e/kill HTTP/1.1" 204 0
+16:28:51,189 urllib3.connectionpool DEBUG http://localhost:None "DELETE /v1.42/containers/6b224d8f93439c0536f44f155b24d47eb1d465df5ade198a5338f530397e1c9e?v=False&link=False&force=False HTTP/1.1" 204 0
+16:28:51,197 urllib3.connectionpool DEBUG http://localhost:None "POST /v1.42/images/prune?filters=%7B%22label%22%3A+%5B%22mp-test%22%5D%7D HTTP/1.1" 200 None
+16:28:51,200 vmware_aria_operations_integration_sdk.validation.describe_checks INFO Validating describe.xml
+16:28:51,523 asyncio DEBUG Using selector: KqueueSelector
+16:28:51,554 asyncio DEBUG Using selector: KqueueSelector
+16:28:57,688 asyncio DEBUG Using selector: KqueueSelector
+16:28:58,937 asyncio DEBUG Using selector: KqueueSelector
+16:29:01,826 asyncio DEBUG Using selector: KqueueSelector
+16:29:04,678 asyncio DEBUG Using selector: KqueueSelector
+16:29:08,454 vmware_aria_operations_integration_sdk.mp_test WARNING Error retrieving SSL certificates from 'endpointURLs'. Proceeding without certificates.
+16:29:08,530 urllib3.connectionpool DEBUG http://localhost:None "POST /v1.42/containers/create HTTP/1.1" 201 None
+16:29:08,536 urllib3.connectionpool DEBUG http://localhost:None "GET /v1.42/containers/0a1fa5a6de9d24c69bfdc206834023f5b36e533edc83ecea2cff385162f8deeb/json HTTP/1.1" 200 None
+16:29:08,822 urllib3.connectionpool DEBUG http://localhost:None "POST /v1.42/containers/0a1fa5a6de9d24c69bfdc206834023f5b36e533edc83ecea2cff385162f8deeb/start HTTP/1.1" 204 0
+16:29:09,999 httpx._client DEBUG HTTP Request: GET http://localhost:8080/apiVersion "HTTP/1.1 200 OK"
+16:29:11,132 urllib3.connectionpool DEBUG http://localhost:None "GET /v1.42/containers/0a1fa5a6de9d24c69bfdc206834023f5b36e533edc83ecea2cff385162f8deeb/stats?stream=False HTTP/1.1" 200 None
+16:29:11,630 httpx._client DEBUG HTTP Request: GET http://localhost:8080/adapterDefinition "HTTP/1.1 200 OK"
+16:29:13,139 urllib3.connectionpool DEBUG http://localhost:None "GET /v1.42/containers/0a1fa5a6de9d24c69bfdc206834023f5b36e533edc83ecea2cff385162f8deeb/stats?stream=False HTTP/1.1" 200 None
+16:29:13,139 sen.util DEBUG getting stats for interface 'eth0'
+16:29:13,488 urllib3.connectionpool DEBUG http://localhost:None "POST /v1.42/containers/0a1fa5a6de9d24c69bfdc206834023f5b36e533edc83ecea2cff385162f8deeb/kill HTTP/1.1" 204 0
+16:29:13,503 urllib3.connectionpool DEBUG http://localhost:None "DELETE /v1.42/containers/0a1fa5a6de9d24c69bfdc206834023f5b36e533edc83ecea2cff385162f8deeb?v=False&link=False&force=False HTTP/1.1" 204 0
+16:29:13,512 urllib3.connectionpool DEBUG http://localhost:None "POST /v1.42/images/prune?filters=%7B%22label%22%3A+%5B%22mp-test%22%5D%7D HTTP/1.1" 200 None
+16:29:13,513 vmware_aria_operations_integration_sdk.mp_test INFO {
+    "adapter_instance": {
+        "attributes": [],
+        "groups": [],
+        "identifiers": [
+            {
+                "default": null,
+                "description": "Example identifier. Using a value of 'bad' will cause test connection to fail; any other value will pass.",
+                "display_order": 0,
+                "enum": false,
+                "ident_type": 1,
+                "key": "ID",
+                "label": "ID",
+                "length": 512,
+                "required": true,
+                "type": "string"
+            },
+            {
+                "default": "1024",
+                "description": "Sets the maximum amount of memory VMware Aria Operations can allocate to the container running this adapter instance.",
+                "display_order": 1,
+                "enum": false,
+                "ident_type": 2,
+                "key": "container_memory_limit",
+                "label": "Adapter Memory Limit (MB)",
+                "required": true,
+                "type": "integer"
+            }
+        ],
+        "key": "tktestmp01_adapter_instance",
+        "label": "tk-testmp01 Adapter Instance"
+    },
+    "adapter_key": "tktestmp01",
+    "adapter_label": "tk-testmp01",
+    "credential_types": [],
+    "describe_version": 1,
+    "object_types": [
+        {
+            "attributes": [
+                {
+                    "dashboard_order": 0,
+                    "data_type": "integer",
+                    "is_discrete": true,
+                    "is_impact": false,
+                    "is_key_attribute": false,
+                    "is_kpi": false,
+                    "is_property": true,
+                    "is_rate": false,
+                    "key": "cpu_count",
+                    "label": "CPU Count",
+                    "unit": null
+                },
+                {
+                    "dashboard_order": 1,
+                    "data_type": "float",
+                    "is_discrete": false,
+                    "is_impact": false,
+                    "is_key_attribute": false,
+                    "is_kpi": false,
+                    "is_property": false,
+                    "is_rate": false,
+                    "key": "user_time",
+                    "label": "User Time",
+                    "unit": "seconds"
+                },
+                {
+                    "dashboard_order": 2,
+                    "data_type": "float",
+                    "is_discrete": false,
+                    "is_impact": false,
+                    "is_key_attribute": true,
+                    "is_kpi": false,
+                    "is_property": false,
+                    "is_rate": false,
+                    "key": "nice_time",
+                    "label": "Nice Time",
+                    "unit": "seconds"
+                },
+                {
+                    "dashboard_order": 3,
+                    "data_type": "float",
+                    "is_discrete": false,
+                    "is_impact": false,
+                    "is_key_attribute": false,
+                    "is_kpi": false,
+                    "is_property": false,
+                    "is_rate": false,
+                    "key": "system_time",
+                    "label": "System Time",
+                    "unit": "seconds"
+                },
+                {
+                    "dashboard_order": 4,
+                    "data_type": "float",
+                    "is_discrete": false,
+                    "is_impact": false,
+                    "is_key_attribute": false,
+                    "is_kpi": false,
+                    "is_property": false,
+                    "is_rate": false,
+                    "key": "idle_time",
+                    "label": "Idle Time",
+                    "unit": "seconds"
+                }
+            ],
+            "groups": [],
+            "identifiers": [],
+            "key": "cpu",
+            "label": "CPU"
+        },
+        {
+            "attributes": [
+                {
+                    "dashboard_order": 0,
+                    "data_type": "string",
+                    "is_discrete": true,
+                    "is_impact": false,
+                    "is_key_attribute": false,
+                    "is_kpi": false,
+                    "is_property": true,
+                    "is_rate": false,
+                    "key": "partition",
+                    "label": "Partition",
+                    "unit": null
+                },
+                {
+                    "dashboard_order": 1,
+                    "data_type": "integer",
+                    "is_discrete": true,
+                    "is_impact": false,
+                    "is_key_attribute": false,
+                    "is_kpi": false,
+                    "is_property": false,
+                    "is_rate": false,
+                    "key": "total_space",
+                    "label": "Total Space",
+                    "unit": "bibyte"
+                },
+                {
+                    "dashboard_order": 2,
+                    "data_type": "integer",
+                    "is_discrete": true,
+                    "is_impact": false,
+                    "is_key_attribute": false,
+                    "is_kpi": false,
+                    "is_property": false,
+                    "is_rate": false,
+                    "key": "used_space",
+                    "label": "Used Space",
+                    "unit": "bibyte"
+                },
+                {
+                    "dashboard_order": 3,
+                    "data_type": "integer",
+                    "is_discrete": true,
+                    "is_impact": false,
+                    "is_key_attribute": false,
+                    "is_kpi": false,
+                    "is_property": false,
+                    "is_rate": false,
+                    "key": "free_space",
+                    "label": "Free Space",
+                    "unit": "bibyte"
+                },
+                {
+                    "dashboard_order": 4,
+                    "data_type": "float",
+                    "is_discrete": false,
+                    "is_impact": false,
+                    "is_key_attribute": true,
+                    "is_kpi": false,
+                    "is_property": false,
+                    "is_rate": false,
+                    "key": "percent_used_space",
+                    "label": "Disk Utilization",
+                    "unit": "percent"
+                }
+            ],
+            "groups": [],
+            "identifiers": [],
+            "key": "disk",
+            "label": "Disk"
+        },
+        {
+            "attributes": [],
+            "groups": [],
+            "identifiers": [],
+            "key": "system",
+            "label": "System"
+        }
+    ],
+    "schema_version": 1
+}
+
+Avg CPU % | Avg Memory Usage % | Memory Limit | Network I/O         | Block I/O    
+----------+--------------------+--------------+---------------------+--------------
+23.6 %    | 4.0 %              | 1.0 GiB      | 2.02 KiB / 6.06 KiB | 0.0 B / 0.0 B
+
+Request completed in 0.50 seconds.
+
+16:29:13,523 openapi_spec_validator.decorators DEBUG Attaching x-scope to {'$ref': '#/components/schemas/AdapterDefinition'}
+16:29:13,523 openapi_spec_validator.decorators DEBUG Attaching x-scope to {'$ref': '#/components/schemas/ObjectDefinition'}
+16:29:13,524 openapi_spec_validator.decorators DEBUG Attaching x-scope to {'$ref': '#/components/schemas/GroupDefinition'}
+16:29:13,524 openapi_spec_validator.decorators DEBUG Attaching x-scope to {'$ref': '#/components/schemas/AttributeDefinition'}
+16:29:13,526 openapi_spec_validator.decorators DEBUG Attaching x-scope to {'$ref': '#/components/schemas/IdentifierDefinition'}
+16:29:13,527 openapi_spec_validator.decorators DEBUG Attaching x-scope to {'$ref': '#/components/schemas/AttributeDefinition'}
+16:29:13,528 openapi_spec_validator.decorators DEBUG Attaching x-scope to {'$ref': '#/components/schemas/CredentialDefinition'}
+16:29:13,530 openapi_spec_validator.decorators DEBUG Attaching x-scope to {'$ref': '#/components/schemas/ObjectDefinition'}
+16:29:13,530 openapi_spec_validator.decorators DEBUG Attaching x-scope to {'$ref': '#/components/schemas/GroupDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,530 openapi_spec_validator.decorators DEBUG Ref #/components/schemas/GroupDefinition already has scope attached
+16:29:13,530 openapi_spec_validator.decorators DEBUG Attaching x-scope to {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition', '#/components/schemas/GroupDefinition']}
+16:29:13,530 openapi_spec_validator.decorators DEBUG Ref #/components/schemas/AttributeDefinition already has scope attached
+16:29:13,532 openapi_spec_validator.decorators DEBUG Attaching x-scope to {'$ref': '#/components/schemas/IdentifierDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,532 openapi_spec_validator.decorators DEBUG Ref #/components/schemas/IdentifierDefinition already has scope attached
+16:29:13,533 openapi_spec_validator.decorators DEBUG Attaching x-scope to {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,533 openapi_spec_validator.decorators DEBUG Ref #/components/schemas/AttributeDefinition already has scope attached
+16:29:13,539 openapi_spec_validator.decorators DEBUG Attaching x-scope to {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition', '#/components/schemas/GroupDefinition']}
+16:29:13,539 openapi_spec_validator.decorators DEBUG Ref #/components/schemas/AttributeDefinition already has scope attached
+16:29:13,540 openapi_spec_validator.decorators DEBUG Attaching x-scope to {'$ref': '#/components/schemas/GroupDefinition'}
+16:29:13,540 openapi_spec_validator.decorators DEBUG Attaching x-scope to {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition', '#/components/schemas/GroupDefinition']}
+16:29:13,540 openapi_spec_validator.decorators DEBUG Ref #/components/schemas/AttributeDefinition already has scope attached
+16:29:13,542 openapi_spec_validator.decorators DEBUG Attaching x-scope to {'$ref': '#/components/schemas/GroupDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,542 openapi_spec_validator.decorators DEBUG Ref #/components/schemas/GroupDefinition already has scope attached
+16:29:13,542 openapi_spec_validator.decorators DEBUG Attaching x-scope to {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition', '#/components/schemas/GroupDefinition']}
+16:29:13,542 openapi_spec_validator.decorators DEBUG Ref #/components/schemas/AttributeDefinition already has scope attached
+16:29:13,543 openapi_spec_validator.decorators DEBUG Attaching x-scope to {'$ref': '#/components/schemas/IdentifierDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,543 openapi_spec_validator.decorators DEBUG Ref #/components/schemas/IdentifierDefinition already has scope attached
+16:29:13,544 openapi_spec_validator.decorators DEBUG Attaching x-scope to {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,544 openapi_spec_validator.decorators DEBUG Ref #/components/schemas/AttributeDefinition already has scope attached
+16:29:13,545 openapi_spec_validator.decorators DEBUG Attaching x-scope to {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,545 openapi_spec_validator.decorators DEBUG Ref #/components/schemas/ObjectDefinition already has scope attached
+16:29:13,546 openapi_spec_validator.decorators DEBUG Attaching x-scope to {'$ref': '#/components/schemas/GroupDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,546 openapi_spec_validator.decorators DEBUG Ref #/components/schemas/GroupDefinition already has scope attached
+16:29:13,546 openapi_spec_validator.decorators DEBUG Attaching x-scope to {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition', '#/components/schemas/GroupDefinition']}
+16:29:13,546 openapi_spec_validator.decorators DEBUG Ref #/components/schemas/AttributeDefinition already has scope attached
+16:29:13,547 openapi_spec_validator.decorators DEBUG Attaching x-scope to {'$ref': '#/components/schemas/IdentifierDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,547 openapi_spec_validator.decorators DEBUG Ref #/components/schemas/IdentifierDefinition already has scope attached
+16:29:13,548 openapi_spec_validator.decorators DEBUG Attaching x-scope to {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,548 openapi_spec_validator.decorators DEBUG Ref #/components/schemas/AttributeDefinition already has scope attached
+16:29:13,549 openapi_spec_validator.decorators DEBUG Attaching x-scope to {'$ref': '#/components/schemas/CredentialDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,549 openapi_spec_validator.decorators DEBUG Ref #/components/schemas/CredentialDefinition already has scope attached
+16:29:13,551 openapi_spec_validator.decorators DEBUG Attaching x-scope to {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,551 openapi_spec_validator.decorators DEBUG Ref #/components/schemas/ObjectDefinition already has scope attached
+16:29:13,551 openapi_spec_validator.decorators DEBUG Attaching x-scope to {'$ref': '#/components/schemas/GroupDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,551 openapi_spec_validator.decorators DEBUG Ref #/components/schemas/GroupDefinition already has scope attached
+16:29:13,551 openapi_spec_validator.decorators DEBUG Attaching x-scope to {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition', '#/components/schemas/GroupDefinition']}
+16:29:13,551 openapi_spec_validator.decorators DEBUG Ref #/components/schemas/AttributeDefinition already has scope attached
+16:29:13,553 openapi_spec_validator.decorators DEBUG Attaching x-scope to {'$ref': '#/components/schemas/IdentifierDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,553 openapi_spec_validator.decorators DEBUG Ref #/components/schemas/IdentifierDefinition already has scope attached
+16:29:13,554 openapi_spec_validator.decorators DEBUG Attaching x-scope to {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,554 openapi_spec_validator.decorators DEBUG Ref #/components/schemas/AttributeDefinition already has scope attached
+16:29:13,555 openapi_spec_validator.validators DEBUG Dereferencing {'/adapterDefinition': {'get': {'summary': 'Retrieve the data model for collection', 'responses': {'200': {'description': 'OK', 'content': {'application/json': {'schema': {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}}}}, '204': {'description': 'No Adapter Definition returned', 'content': {'application/json': {'schema': {'type': 'object'}}}}}, 'operationId': 'definition', 'description': 'Get Adapter Definition'}, 'parameters': []}}
+16:29:13,555 openapi_spec_validator.validators DEBUG Dereferencing {'get': {'summary': 'Retrieve the data model for collection', 'responses': {'200': {'description': 'OK', 'content': {'application/json': {'schema': {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}}}}, '204': {'description': 'No Adapter Definition returned', 'content': {'application/json': {'schema': {'type': 'object'}}}}}, 'operationId': 'definition', 'description': 'Get Adapter Definition'}, 'parameters': []}
+16:29:13,555 openapi_spec_validator.validators DEBUG Dereferencing {'get': {'summary': 'Retrieve the data model for collection', 'responses': {'200': {'description': 'OK', 'content': {'application/json': {'schema': {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}}}}, '204': {'description': 'No Adapter Definition returned', 'content': {'application/json': {'schema': {'type': 'object'}}}}}, 'operationId': 'definition', 'description': 'Get Adapter Definition'}, 'parameters': []}
+16:29:13,555 openapi_spec_validator.validators DEBUG Dereferencing {'summary': 'Retrieve the data model for collection', 'responses': {'200': {'description': 'OK', 'content': {'application/json': {'schema': {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}}}}, '204': {'description': 'No Adapter Definition returned', 'content': {'application/json': {'schema': {'type': 'object'}}}}}, 'operationId': 'definition', 'description': 'Get Adapter Definition'}
+16:29:13,556 openapi_spec_validator.validators DEBUG Dereferencing {'schemas': {'AttributeDefinition': {'type': 'object', 'title': 'Attribute Definition', 'description': "Defines an attribute's metadata", 'properties': {'key': {'type': 'string'}, 'label': {'type': 'string'}, 'unit': {'type': 'string', 'nullable': True}, 'is_rate': {'type': 'boolean', 'default': False}, 'is_discrete': {'type': 'boolean', 'default': False}, 'is_kpi': {'type': 'boolean', 'default': False}, 'is_impact': {'type': 'boolean', 'default': False}, 'is_key_attribute': {'type': 'boolean', 'default': False}, 'dashboard_order': {'type': 'integer', 'format': 'int32'}, 'data_type': {'type': 'string'}, 'is_property': {'type': 'boolean'}}, 'required': ['key', 'label', 'is_rate', 'is_discrete', 'is_kpi', 'is_impact', 'is_key_attribute', 'dashboard_order', 'data_type', 'is_property']}, 'CredentialDefinition': {'type': 'object', 'title': 'Credential Definition', 'description': 'Defines what credential fields are present on a given credential type', 'properties': {'key': {'type': 'string'}, 'label': {'type': 'string'}, 'fields': {'type': 'array', 'items': {'type': 'object', 'properties': {'key': {'type': 'string'}, 'label': {'type': 'string'}, 'required': {'type': 'boolean', 'default': True}, 'password': {'type': 'boolean', 'default': False}, 'enum': {'type': 'boolean', 'default': False}, 'enum_values': {'type': 'array', 'items': {'type': 'object', 'properties': {'key': {'type': 'string'}, 'label': {'type': 'string'}, 'display_order': {'type': 'integer', 'format': 'int32', 'minimum': 0}}}}, 'default': {'type': 'string', 'nullable': True}, 'display_order': {'type': 'integer', 'format': 'int32'}, 'type': {'type': 'string', 'default': 'string'}}, 'required': ['key', 'label', 'required', 'password', 'enum', 'display_order', 'type']}}}}, 'IdentifierDefinition': {'type': 'object', 'title': 'Identifier Definition', 'description': 'Defines what identifiers are present on a given object type', 'properties': {'key': {'type': 'string'}, 'label': {'type': 'string'}, 'description': {'type': 'string'}, 'required': {'type': 'boolean', 'default': True}, 'ident_type': {'type': 'integer', 'format': 'int32', 'default': 1}, 'enum': {'type': 'boolean', 'default': False}, 'enum_values': {'type': 'array', 'items': {'type': 'object', 'properties': {'key': {'type': 'string'}, 'label': {'type': 'string'}, 'display_order': {'type': 'integer', 'format': 'int32', 'minimum': 0}}}}, 'display_order': {'type': 'integer', 'format': 'int32'}, 'type': {'type': 'string'}, 'length': {'type': 'integer', 'nullable': True}, 'default': {'type': 'string', 'nullable': True}}, 'required': ['key', 'label', 'required', 'ident_type', 'enum', 'display_order', 'type']}, 'GroupDefinition': {'title': 'Group Definition', 'type': 'object', 'description': 'Definition of a group of attributes and subgroups', 'properties': {'attributes': {'type': 'array', 'items': {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition', '#/components/schemas/GroupDefinition']}}, 'groups': {'type': 'array', 'items': {'$ref': '#/components/schemas/GroupDefinition', 'x-scope': ['']}}}}, 'ObjectDefinition': {'title': 'Object Definition', 'type': 'object', 'description': 'Definition of an object type', 'properties': {'key': {'type': 'string'}, 'label': {'type': 'string'}, 'identifiers': {'type': 'array', 'items': {'$ref': '#/components/schemas/IdentifierDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}}, 'attributes': {'type': 'array', 'items': {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}}, 'groups': {'type': 'array', 'items': {'$ref': '#/components/schemas/GroupDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}}}, 'required': ['key', 'label', 'identifiers', 'groups']}, 'AdapterDefinition': {'title': 'Adapter Definition', 'type': 'object', 'description': 'Definition of the object model returned in CollectResult', 'properties': {'schema_version': {'type': 'integer', 'format': 'int32'}, 'adapter_key': {'type': 'string'}, 'adapter_label': {'type': 'string'}, 'describe_version': {'type': 'integer', 'format': 'int32'}, 'adapter_instance': {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}, 'credential_types': {'type': 'array', 'items': {'$ref': '#/components/schemas/CredentialDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}}, 'object_types': {'type': 'array', 'items': {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}}}, 'required': ['adapter_key', 'adapter_label', 'describe_version', 'adapter_instance', 'credential_types', 'object_types']}}}
+16:29:13,556 openapi_spec_validator.validators DEBUG Dereferencing {'AttributeDefinition': {'type': 'object', 'title': 'Attribute Definition', 'description': "Defines an attribute's metadata", 'properties': {'key': {'type': 'string'}, 'label': {'type': 'string'}, 'unit': {'type': 'string', 'nullable': True}, 'is_rate': {'type': 'boolean', 'default': False}, 'is_discrete': {'type': 'boolean', 'default': False}, 'is_kpi': {'type': 'boolean', 'default': False}, 'is_impact': {'type': 'boolean', 'default': False}, 'is_key_attribute': {'type': 'boolean', 'default': False}, 'dashboard_order': {'type': 'integer', 'format': 'int32'}, 'data_type': {'type': 'string'}, 'is_property': {'type': 'boolean'}}, 'required': ['key', 'label', 'is_rate', 'is_discrete', 'is_kpi', 'is_impact', 'is_key_attribute', 'dashboard_order', 'data_type', 'is_property']}, 'CredentialDefinition': {'type': 'object', 'title': 'Credential Definition', 'description': 'Defines what credential fields are present on a given credential type', 'properties': {'key': {'type': 'string'}, 'label': {'type': 'string'}, 'fields': {'type': 'array', 'items': {'type': 'object', 'properties': {'key': {'type': 'string'}, 'label': {'type': 'string'}, 'required': {'type': 'boolean', 'default': True}, 'password': {'type': 'boolean', 'default': False}, 'enum': {'type': 'boolean', 'default': False}, 'enum_values': {'type': 'array', 'items': {'type': 'object', 'properties': {'key': {'type': 'string'}, 'label': {'type': 'string'}, 'display_order': {'type': 'integer', 'format': 'int32', 'minimum': 0}}}}, 'default': {'type': 'string', 'nullable': True}, 'display_order': {'type': 'integer', 'format': 'int32'}, 'type': {'type': 'string', 'default': 'string'}}, 'required': ['key', 'label', 'required', 'password', 'enum', 'display_order', 'type']}}}}, 'IdentifierDefinition': {'type': 'object', 'title': 'Identifier Definition', 'description': 'Defines what identifiers are present on a given object type', 'properties': {'key': {'type': 'string'}, 'label': {'type': 'string'}, 'description': {'type': 'string'}, 'required': {'type': 'boolean', 'default': True}, 'ident_type': {'type': 'integer', 'format': 'int32', 'default': 1}, 'enum': {'type': 'boolean', 'default': False}, 'enum_values': {'type': 'array', 'items': {'type': 'object', 'properties': {'key': {'type': 'string'}, 'label': {'type': 'string'}, 'display_order': {'type': 'integer', 'format': 'int32', 'minimum': 0}}}}, 'display_order': {'type': 'integer', 'format': 'int32'}, 'type': {'type': 'string'}, 'length': {'type': 'integer', 'nullable': True}, 'default': {'type': 'string', 'nullable': True}}, 'required': ['key', 'label', 'required', 'ident_type', 'enum', 'display_order', 'type']}, 'GroupDefinition': {'title': 'Group Definition', 'type': 'object', 'description': 'Definition of a group of attributes and subgroups', 'properties': {'attributes': {'type': 'array', 'items': {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition', '#/components/schemas/GroupDefinition']}}, 'groups': {'type': 'array', 'items': {'$ref': '#/components/schemas/GroupDefinition', 'x-scope': ['']}}}}, 'ObjectDefinition': {'title': 'Object Definition', 'type': 'object', 'description': 'Definition of an object type', 'properties': {'key': {'type': 'string'}, 'label': {'type': 'string'}, 'identifiers': {'type': 'array', 'items': {'$ref': '#/components/schemas/IdentifierDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}}, 'attributes': {'type': 'array', 'items': {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}}, 'groups': {'type': 'array', 'items': {'$ref': '#/components/schemas/GroupDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}}}, 'required': ['key', 'label', 'identifiers', 'groups']}, 'AdapterDefinition': {'title': 'Adapter Definition', 'type': 'object', 'description': 'Definition of the object model returned in CollectResult', 'properties': {'schema_version': {'type': 'integer', 'format': 'int32'}, 'adapter_key': {'type': 'string'}, 'adapter_label': {'type': 'string'}, 'describe_version': {'type': 'integer', 'format': 'int32'}, 'adapter_instance': {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}, 'credential_types': {'type': 'array', 'items': {'$ref': '#/components/schemas/CredentialDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}}, 'object_types': {'type': 'array', 'items': {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}}}, 'required': ['adapter_key', 'adapter_label', 'describe_version', 'adapter_instance', 'credential_types', 'object_types']}}
+16:29:13,556 openapi_spec_validator.validators DEBUG Dereferencing {'type': 'object', 'title': 'Attribute Definition', 'description': "Defines an attribute's metadata", 'properties': {'key': {'type': 'string'}, 'label': {'type': 'string'}, 'unit': {'type': 'string', 'nullable': True}, 'is_rate': {'type': 'boolean', 'default': False}, 'is_discrete': {'type': 'boolean', 'default': False}, 'is_kpi': {'type': 'boolean', 'default': False}, 'is_impact': {'type': 'boolean', 'default': False}, 'is_key_attribute': {'type': 'boolean', 'default': False}, 'dashboard_order': {'type': 'integer', 'format': 'int32'}, 'data_type': {'type': 'string'}, 'is_property': {'type': 'boolean'}}, 'required': ['key', 'label', 'is_rate', 'is_discrete', 'is_kpi', 'is_impact', 'is_key_attribute', 'dashboard_order', 'data_type', 'is_property']}
+16:29:13,556 openapi_spec_validator.validators DEBUG Dereferencing {'type': 'object', 'title': 'Credential Definition', 'description': 'Defines what credential fields are present on a given credential type', 'properties': {'key': {'type': 'string'}, 'label': {'type': 'string'}, 'fields': {'type': 'array', 'items': {'type': 'object', 'properties': {'key': {'type': 'string'}, 'label': {'type': 'string'}, 'required': {'type': 'boolean', 'default': True}, 'password': {'type': 'boolean', 'default': False}, 'enum': {'type': 'boolean', 'default': False}, 'enum_values': {'type': 'array', 'items': {'type': 'object', 'properties': {'key': {'type': 'string'}, 'label': {'type': 'string'}, 'display_order': {'type': 'integer', 'format': 'int32', 'minimum': 0}}}}, 'default': {'type': 'string', 'nullable': True}, 'display_order': {'type': 'integer', 'format': 'int32'}, 'type': {'type': 'string', 'default': 'string'}}, 'required': ['key', 'label', 'required', 'password', 'enum', 'display_order', 'type']}}}}
+16:29:13,556 openapi_spec_validator.validators DEBUG Dereferencing {'type': 'object', 'title': 'Identifier Definition', 'description': 'Defines what identifiers are present on a given object type', 'properties': {'key': {'type': 'string'}, 'label': {'type': 'string'}, 'description': {'type': 'string'}, 'required': {'type': 'boolean', 'default': True}, 'ident_type': {'type': 'integer', 'format': 'int32', 'default': 1}, 'enum': {'type': 'boolean', 'default': False}, 'enum_values': {'type': 'array', 'items': {'type': 'object', 'properties': {'key': {'type': 'string'}, 'label': {'type': 'string'}, 'display_order': {'type': 'integer', 'format': 'int32', 'minimum': 0}}}}, 'display_order': {'type': 'integer', 'format': 'int32'}, 'type': {'type': 'string'}, 'length': {'type': 'integer', 'nullable': True}, 'default': {'type': 'string', 'nullable': True}}, 'required': ['key', 'label', 'required', 'ident_type', 'enum', 'display_order', 'type']}
+16:29:13,556 openapi_spec_validator.validators DEBUG Dereferencing {'title': 'Group Definition', 'type': 'object', 'description': 'Definition of a group of attributes and subgroups', 'properties': {'attributes': {'type': 'array', 'items': {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition', '#/components/schemas/GroupDefinition']}}, 'groups': {'type': 'array', 'items': {'$ref': '#/components/schemas/GroupDefinition', 'x-scope': ['']}}}}
+16:29:13,556 openapi_spec_validator.validators DEBUG Dereferencing {'title': 'Object Definition', 'type': 'object', 'description': 'Definition of an object type', 'properties': {'key': {'type': 'string'}, 'label': {'type': 'string'}, 'identifiers': {'type': 'array', 'items': {'$ref': '#/components/schemas/IdentifierDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}}, 'attributes': {'type': 'array', 'items': {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}}, 'groups': {'type': 'array', 'items': {'$ref': '#/components/schemas/GroupDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}}}, 'required': ['key', 'label', 'identifiers', 'groups']}
+16:29:13,556 openapi_spec_validator.validators DEBUG Dereferencing {'title': 'Adapter Definition', 'type': 'object', 'description': 'Definition of the object model returned in CollectResult', 'properties': {'schema_version': {'type': 'integer', 'format': 'int32'}, 'adapter_key': {'type': 'string'}, 'adapter_label': {'type': 'string'}, 'describe_version': {'type': 'integer', 'format': 'int32'}, 'adapter_instance': {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}, 'credential_types': {'type': 'array', 'items': {'$ref': '#/components/schemas/CredentialDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}}, 'object_types': {'type': 'array', 'items': {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}}}, 'required': ['adapter_key', 'adapter_label', 'describe_version', 'adapter_instance', 'credential_types', 'object_types']}
+16:29:13,558 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,561 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,561 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,562 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,562 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,562 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,562 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,562 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,562 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,563 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,563 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,563 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,563 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,563 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,563 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,563 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,563 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,564 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,564 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,564 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,564 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,564 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/IdentifierDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,564 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,564 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,565 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/IdentifierDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,565 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,565 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,565 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/IdentifierDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,565 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,565 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,565 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/IdentifierDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,565 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,565 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,565 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/IdentifierDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,565 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,565 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,565 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/IdentifierDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,565 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,566 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,566 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/IdentifierDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,566 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,566 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,566 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/IdentifierDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,566 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,566 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,566 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/IdentifierDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,566 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,566 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,566 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/IdentifierDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,566 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,566 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,566 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/IdentifierDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,566 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,567 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,567 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/IdentifierDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,567 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,567 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,567 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/IdentifierDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,567 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,567 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,567 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/IdentifierDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,567 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,567 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,567 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/IdentifierDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,567 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,567 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,568 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/IdentifierDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,568 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,568 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,568 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/IdentifierDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,568 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,568 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,568 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/IdentifierDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,568 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,568 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,568 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/IdentifierDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,568 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,568 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,568 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/IdentifierDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,568 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,568 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,569 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/IdentifierDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,569 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,569 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,569 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/IdentifierDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,569 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,569 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,569 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/IdentifierDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,569 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,569 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,569 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/IdentifierDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,569 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,569 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,569 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/IdentifierDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,569 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,569 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,569 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/IdentifierDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,570 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,570 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,570 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/IdentifierDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,570 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,570 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,570 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,570 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,570 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,570 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,570 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,570 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,570 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,570 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/GroupDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,571 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,571 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,571 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/CredentialDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,571 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,573 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,573 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,574 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,574 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,574 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,574 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,574 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,574 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,574 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,574 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,574 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,575 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,575 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,575 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,575 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/IdentifierDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,575 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,575 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,576 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,576 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,576 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,576 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,576 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,576 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,576 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,576 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,576 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,577 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,577 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,577 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,577 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,577 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,577 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,577 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,577 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,577 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,577 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,577 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,577 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,577 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,577 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,578 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,578 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,578 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,578 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,578 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,578 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,578 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,578 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,578 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,578 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,578 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,578 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,578 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,578 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,578 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,579 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,579 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,579 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,579 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,579 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,579 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,579 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,579 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,579 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,579 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,579 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,579 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,580 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,580 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,580 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,580 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,580 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,580 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,580 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,580 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,580 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,580 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,580 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,580 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,580 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,580 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,580 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,580 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,581 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,581 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,581 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,581 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,581 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,581 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,581 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,581 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,581 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,581 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,581 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,581 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,581 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,581 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,581 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,582 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,582 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,582 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,582 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,582 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,582 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,582 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,582 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,582 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,582 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,582 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,582 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,583 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,583 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,583 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,583 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,583 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,583 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,583 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,583 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,583 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,583 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,583 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,583 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,583 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,583 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,583 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,584 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,584 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,584 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,584 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,584 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,584 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,584 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,584 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,584 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,584 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,584 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,584 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,584 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,585 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,585 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,585 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,585 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,585 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,585 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,585 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,585 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,585 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,585 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,585 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,585 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,585 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,585 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,585 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,586 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,586 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,586 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,586 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,586 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,586 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,586 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,586 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,586 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,586 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,586 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,586 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,586 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,586 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,586 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,587 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,587 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,587 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,587 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,587 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,587 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,587 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,587 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,587 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,587 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,587 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,587 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,587 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,588 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,588 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,588 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,588 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,588 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,588 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,588 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,588 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,588 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,588 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,588 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,588 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,588 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,588 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,588 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,589 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,589 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,589 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,589 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,589 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,589 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,589 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,589 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,589 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,589 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,589 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,589 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,589 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,589 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,589 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,590 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,590 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,590 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,590 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,590 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,590 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,590 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,590 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,590 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/GroupDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,591 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,591 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,591 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,591 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,592 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,592 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,592 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,592 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,592 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,592 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,592 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,592 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,592 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/IdentifierDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,592 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,592 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,593 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,593 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,593 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,594 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,594 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,594 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,594 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,594 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,594 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,594 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,594 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,594 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,594 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,594 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,594 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,594 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,594 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,595 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,595 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,595 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,595 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,595 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,595 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,595 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,595 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,595 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,595 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,595 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,595 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,595 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,595 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,595 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,595 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,596 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,596 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,596 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,596 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,596 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,596 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,596 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,596 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,596 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,596 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,596 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,596 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,597 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,597 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,597 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,597 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,597 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,597 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,597 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,597 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,597 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,597 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,597 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,597 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,597 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,597 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,597 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,598 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,598 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,598 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,598 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,598 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,598 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,598 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,598 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,598 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,598 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,598 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,598 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,598 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,598 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,598 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,599 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,599 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,599 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,599 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,599 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,599 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,599 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,599 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,599 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,599 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,600 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,600 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,600 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,600 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,600 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,600 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,600 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,600 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,600 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,600 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,600 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,600 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,600 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,600 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,601 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,601 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,601 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,601 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,601 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,601 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,601 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,601 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,601 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,601 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,601 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,601 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,601 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,601 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,601 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,602 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,602 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,602 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,602 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,602 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,602 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,602 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,602 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,602 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,602 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,602 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,602 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,603 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,603 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,603 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,603 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,603 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,603 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,603 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,603 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,603 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,603 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,603 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,603 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,603 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,603 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,603 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,603 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,604 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,604 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,604 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,604 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,604 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,604 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,604 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,604 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,604 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,604 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,604 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,604 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,604 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,604 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,604 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,605 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,605 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,605 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,605 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,605 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,605 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,605 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,605 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,605 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,605 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,605 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,605 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,606 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,606 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,606 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,606 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,606 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,606 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,606 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,606 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,606 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,606 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,606 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,606 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,606 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,606 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,606 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,606 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,607 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,607 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,607 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,607 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,607 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,607 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,607 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,607 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,607 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,607 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,607 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,607 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,607 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,607 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,607 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,608 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,608 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,608 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/GroupDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,608 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,608 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,608 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,608 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,608 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,608 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,608 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,608 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,608 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,609 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,609 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,609 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,609 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/IdentifierDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,609 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,609 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,609 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,609 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,609 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AttributeDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,609 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,609 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,609 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/AdapterDefinition', 'x-scope': ['']}
+16:29:13,609 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/ObjectDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition']}
+16:29:13,609 openapi_spec_validator.validators DEBUG Dereferencing {'$ref': '#/components/schemas/GroupDefinition', 'x-scope': ['', '#/components/schemas/AdapterDefinition', '#/components/schemas/ObjectDefinition']}
+16:29:13,613 vmware_aria_operations_integration_sdk.validation.describe_checks INFO Validating describe.xml
+16:29:13,783 vmware_aria_operations_integration_sdk.mp_test INFO All validation logs written to '/Users/tkopton/local-repos/ariaops-sdk/mp-test-01/logs/validation.log'
+16:29:13,785 vmware_aria_operations_integration_sdk.mp_test INFO Validation passed with no errors

@@ -1,0 +1,10 @@
+2023-06-01 16:30:57,52 __main__ INFO Running adapter code with arguments: ['adapter_definition', '/tmp/tmpsn1_vm73/input_pipe', '/tmp/tmpsn1_vm73/output_pipe']
+2023-06-01 16:30:57,54 __main__ INFO Starting 'Get Adapter Definition'
+2023-06-01 16:30:57,58 __main__ INFO Finished 'Get Adapter Definition' in 0.00s
+2023-06-01 16:30:57,64 __main__ INFO Timing Graph: 
+━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Operation             │Time    │t=0s                                             t=0.00s
+━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Get Adapter Definition│0.00s   │╾──────────────────────────────────────────────────────╼
+━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
