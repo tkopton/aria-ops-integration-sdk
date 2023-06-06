@@ -1,0 +1,3 @@
+SUCCESS: Json response from adapter validates against the schema.
+SUCCESS: Collection cross checked against describe.xml successfully.
+SUCCESS: No cycles found in relationships.

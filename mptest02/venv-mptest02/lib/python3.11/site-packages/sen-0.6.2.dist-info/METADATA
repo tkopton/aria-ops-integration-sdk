@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: sen
+Version: 0.6.2
+Summary: Terminal User Interface for Docker Engine
+Home-page: https://github.com/TomasTomecek/sen/
+Author: Tomas Tomecek
+Author-email: tomas@tomecek.net
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Topic :: System :: Monitoring
+Requires-Dist: urwid
+Requires-Dist: docker
+Requires-Dist: urwidtrees
+
+UNKNOWN
+
+

@@ -1,0 +1,74 @@
+{
+    "connections": [
+        {
+            "certificates": [],
+            "credential": {},
+            "custom_collection_number": null,
+            "custom_collection_window": null,
+            "identifiers": {
+                "api": {
+                    "part_of_uniqueness": true,
+                    "required": true,
+                    "value": "/o/autobahn"
+                },
+                "container_memory_limit": {
+                    "part_of_uniqueness": false,
+                    "required": true,
+                    "value": "1024"
+                },
+                "fqdn": {
+                    "part_of_uniqueness": true,
+                    "required": true,
+                    "value": "verkehr.autobahn.de"
+                },
+                "port": {
+                    "part_of_uniqueness": true,
+                    "required": true,
+                    "value": "443"
+                }
+            },
+            "name": "test01",
+            "suite_api_hostname": null,
+            "suite_api_password": null,
+            "suite_api_username": null
+        },
+        {
+            "certificates": [],
+            "credential": {},
+            "custom_collection_number": null,
+            "custom_collection_window": null,
+            "identifiers": {
+                "api": {
+                    "part_of_uniqueness": true,
+                    "required": true,
+                    "value": "/o/autobahn"
+                },
+                "container_memory_limit": {
+                    "part_of_uniqueness": false,
+                    "required": true,
+                    "value": "1024"
+                },
+                "fqdn": {
+                    "part_of_uniqueness": true,
+                    "required": true,
+                    "value": "verkehr.autobahn.de"
+                },
+                "port": {
+                    "part_of_uniqueness": true,
+                    "required": true,
+                    "value": "443"
+                }
+            },
+            "name": "test02",
+            "suite_api_hostname": null,
+            "suite_api_password": null,
+            "suite_api_username": null
+        }
+    ],
+    "default_memory_limit": 1024,
+    "docker_port": 8080,
+    "docker_registry": "docker.io/tkopton307/mptest02",
+    "suite_api_hostname": "hostname",
+    "suite_api_password": "password",
+    "suite_api_username": "username"
+}

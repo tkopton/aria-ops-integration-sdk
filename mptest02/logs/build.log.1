@@ -1,0 +1,42 @@
+15:18:00,284 asyncio DEBUG Using selector: KqueueSelector
+15:18:00,285 docker.utils.config DEBUG Trying paths: ['/Users/tkopton/.docker/config.json', '/Users/tkopton/.dockercfg']
+15:18:00,285 docker.utils.config DEBUG Found file at path: /Users/tkopton/.docker/config.json
+15:18:00,285 docker.auth DEBUG Found 'auths' section
+15:18:00,285 docker.auth DEBUG Auth data for docker.io is absent. Client might be using a credentials store instead.
+15:18:00,285 docker.auth DEBUG Auth data for https://index.docker.io/v1/ is absent. Client might be using a credentials store instead.
+15:18:00,285 docker.auth DEBUG Found 'credsStore' section
+15:18:00,303 urllib3.connectionpool DEBUG http://localhost:None "GET /version HTTP/1.1" 200 None
+15:18:00,321 asyncio DEBUG Using selector: KqueueSelector
+15:18:00,366 docker.api.build DEBUG Looking for auth config
+15:18:00,767 docker.auth DEBUG Looking for auth entry for 'https://docker.io'
+15:18:01,190 docker.auth DEBUG Looking for auth entry for 'https://index.docker.io/v1/'
+15:18:01,647 docker.auth DEBUG Looking for auth entry for 'https://index.docker.io/v1//access-token'
+15:18:02,106 docker.auth DEBUG Looking for auth entry for 'https://index.docker.io/v1//refresh-token'
+15:18:02,573 docker.api.build DEBUG Sending auth config ('docker.io', 'https://index.docker.io/v1/', 'https://docker.io', 'index.docker.io', 'https://index.docker.io/v1//access-token', 'https://index.docker.io/v1//refresh-token')
+15:18:02,617 urllib3.connectionpool DEBUG http://localhost:None "POST /v1.43/build?t=mptest02-test%3A1.0.0&q=False&nocache=False&rm=True&forcerm=False&pull=False&labels=%7B%22mp-test%22%3A+%221685971080.305439%22%7D HTTP/1.1" 200 None
+15:18:02,693 urllib3.connectionpool DEBUG http://localhost:None "GET /v1.43/images/ff31023080b4/json HTTP/1.1" 200 None
+15:18:02,727 urllib3.connectionpool DEBUG http://localhost:None "POST /v1.43/containers/create HTTP/1.1" 201 None
+15:18:02,732 urllib3.connectionpool DEBUG http://localhost:None "GET /v1.43/containers/b0bfbcbf164391a08b94880100e207978115428d30a7945e9fcdb3be9ead5afb/json HTTP/1.1" 200 None
+15:18:03,35 urllib3.connectionpool DEBUG http://localhost:None "POST /v1.43/containers/b0bfbcbf164391a08b94880100e207978115428d30a7945e9fcdb3be9ead5afb/start HTTP/1.1" 204 0
+15:18:03,118 asyncio DEBUG Using selector: KqueueSelector
+15:18:04,752 httpx._client DEBUG HTTP Request: GET http://localhost:8080/apiVersion "HTTP/1.1 200 OK"
+15:18:05,585 httpx._client DEBUG HTTP Request: GET http://localhost:8080/adapterDefinition "HTTP/1.1 200 OK"
+15:18:05,591 vmware_aria_operations_integration_sdk.validation.describe_checks INFO Validating describe.xml
+15:18:08,619 docker.api.build DEBUG Looking for auth config
+15:18:09,158 docker.auth DEBUG Looking for auth entry for 'https://docker.io'
+15:18:09,550 docker.auth DEBUG Looking for auth entry for 'https://index.docker.io/v1/'
+15:18:09,956 docker.auth DEBUG Looking for auth entry for 'https://index.docker.io/v1//access-token'
+15:18:10,323 docker.auth DEBUG Looking for auth entry for 'https://index.docker.io/v1//refresh-token'
+15:18:10,760 docker.api.build DEBUG Sending auth config ('docker.io', 'https://index.docker.io/v1/', 'https://docker.io', 'index.docker.io', 'https://index.docker.io/v1//access-token', 'https://index.docker.io/v1//refresh-token')
+15:18:10,802 urllib3.connectionpool DEBUG http://localhost:None "POST /v1.43/build?t=docker.io%2Ftkopton307%2Fmptest02%3A1.0.0_1685971088.550735&q=False&nocache=True&rm=True&forcerm=False&pull=False HTTP/1.1" 200 None
+15:18:15,424 urllib3.connectionpool DEBUG http://localhost:None "GET /v1.43/images/7a255045d659/json HTTP/1.1" 200 None
+15:18:15,568 docker.auth DEBUG Looking for auth config
+15:18:15,568 docker.auth DEBUG Using credentials store "desktop"
+15:18:15,578 docker.auth DEBUG Looking for auth entry for 'https://index.docker.io/v1/'
+15:18:16,13 docker.auth DEBUG Found auth config
+15:18:16,27 urllib3.connectionpool DEBUG http://localhost:None "POST /v1.43/images/docker.io/tkopton307/mptest02/push?tag=1.0.0_1685971088.550735 HTTP/1.1" 200 None
+15:18:23,577 urllib3.connectionpool DEBUG http://localhost:None "GET /v1.43/images/json?only_ids=0&all=0&filters=%7B%22reference%22%3A+%5B%22docker.io%2Ftkopton307%2Fmptest02%3A1.0.0_1685971088.550735%22%5D%7D HTTP/1.1" 200 None
+15:18:23,672 httpx._client DEBUG HTTP Request: GET http://localhost:8080/apiVersion "HTTP/1.1 200 OK"
+15:18:23,899 urllib3.connectionpool DEBUG http://localhost:None "POST /v1.43/containers/b0bfbcbf164391a08b94880100e207978115428d30a7945e9fcdb3be9ead5afb/kill HTTP/1.1" 204 0
+15:18:23,911 urllib3.connectionpool DEBUG http://localhost:None "DELETE /v1.43/containers/b0bfbcbf164391a08b94880100e207978115428d30a7945e9fcdb3be9ead5afb?v=False&link=False&force=False HTTP/1.1" 204 0
+15:18:23,921 urllib3.connectionpool DEBUG http://localhost:None "POST /v1.43/images/prune?filters=%7B%22label%22%3A+%5B%22mp-test%22%5D%7D HTTP/1.1" 200 None
