@@ -106,7 +106,7 @@ def collect(adapter_instance: AdapterInstance) -> CollectResult:
                 data = response.json()
                 roads = data["roads"]
 
-                for road in roads[:3]:
+                for road in roads[:10]:
                     logger.debug(road)
                     autobahn_id = road
                     autobahn = result.object(
