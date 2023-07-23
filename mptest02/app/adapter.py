@@ -106,7 +106,7 @@ def collect(adapter_instance: AdapterInstance) -> CollectResult:
                 data = response.json()
                 roads = data["roads"]
 
-                for road in roads[:10]:
+                for road in roads:
                     logger.debug(road)
                     autobahn_id = road
                     autobahn = result.object(
@@ -122,7 +122,7 @@ def collect(adapter_instance: AdapterInstance) -> CollectResult:
                         data = response.json()
                         roadworks = data["roadworks"]
 
-                        for roadwork in roadworks[:10]:
+                        for roadwork in roadworks:
                             logger.debug(roadwork)
                             roadwork_title = roadwork["title"]
                             roadwork_id = roadwork["identifier"]
